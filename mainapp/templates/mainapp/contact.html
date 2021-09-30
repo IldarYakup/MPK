@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="ЧАСТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ&nbsp;ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ&nbsp;&quot;ПРОМНЕФТЕСЕРВИСНАЯ КОРПОРАЦИЯ&quot;">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}" media="screen">
+  <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{% static 'js/style.js' %}" defer=""></script>
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i">
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="contact">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="u-body">
+  <header class="u-clearfix u-header" id="sec-37b8">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a href="{% url 'main' %}" class="u-image u-logo u-image-1" data-image-width="418" data-image-height="172">
+        <img src="{% static 'images/0001.jpg' %}" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-active-color u-custom-border-radius u-custom-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </symbol>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'main' %}" style="padding: 10px 42px;">Главная</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'courses' %}" style="padding: 10px 42px;">Курсы</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'education' %}" style="padding: 10px 42px;">Обучение</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'sees' %}" target="_blank" style="padding: 10px 42px;">Версия для слабовидящих</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'contact' %}" style="padding: 10px 42px;">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main' %}"
+                    style="padding: 10px 42px;">Главная</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'courses' %}"
+                    style="padding: 10px 42px;">Курсы</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'education' %}"
+                    style="padding: 10px 42px;">Обучение</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'sees' %}" target="_blank"
+                    style="padding: 10px 42px;">Версия для слабовидящих</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}"
+                    style="padding: 10px 42px;">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-hidden-sm u-hidden-xs u-section-1" id="sec-b38c">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-custom-font u-font-georgia u-text u-text-1">ЧАСТНОЕ ОБРАЗОВАТЕЛЬНОЕ
+        УЧРЕЖДЕНИЕ&nbsp;<br>ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ&nbsp;<br>"МЕНЗЕЛИНСКАЯ ПРОМНЕФТЕСЕРВИСНАЯ
+        КОРПОРАЦИЯ"
+      </h1>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-2" id="sec-3784">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-custom-item u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-1"><span
+                class="u-custom-item u-icon u-icon-circle u-palette-1-base u-spacing-8 u-icon-1"><svg class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice" viewBox="0 0 58 58" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-325d"></use>
+                </svg><svg class="u-svg-content" viewBox="0 0 58 58" x="0px" y="0px" id="svg-325d"
+                  style="enable-background:new 0 0 58 58;">
+                  <ellipse style="fill:#23A24D;" cx="29" cy="50" rx="29" ry="8"></ellipse>
+                  <path style="fill:#EBBA16;" d="M41.676,5.324L41.676,5.324c-7.098-7.098-18.607-7.098-25.706,0h0
+	C9.574,11.72,8.855,23.763,14.282,31l14.541,21l14.541-21C48.792,23.763,48.072,11.72,41.676,5.324z M29,24c-3.314,0-6-2.686-6-6
+	s2.686-6,6-6s6,2.686,6,6S32.314,24,29,24z"></path>
+                </svg></span>
+            </div>
+          </div>
+          <div class="u-container-style u-custom-item u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-2"><span
+                class="u-custom-item u-icon u-icon-circle u-palette-1-base u-spacing-8 u-icon-2"><svg class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice" viewBox="0 0 58 58" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-322b"></use>
+                </svg><svg class="u-svg-content" viewBox="0 0 58 58" x="0px" y="0px" id="svg-322b"
+                  style="enable-background:new 0 0 58 58;">
+                  <rect x="25.677" y="47" style="fill:#C8D2D6;" width="24" height="11"></rect>
+                  <path style="fill:#E7ECED;" d="M41.677,58h-16V47h9.426c3.631,0,6.574,2.943,6.574,6.574V58z"></path>
+                  <circle style="fill:#7383BF;" cx="35.177" cy="52.5" r="2.5"></circle>
+                  <path style="fill:#FBCE9D;" d="M33.581,10.702c1.233-0.542,2.096-1.77,2.096-3.202c0-1.933-1.567-3.5-3.5-3.5
+	c-1.433,0-2.661,0.863-3.202,2.096L33.581,10.702z"></path>
+                  <path style="fill:#FBCE9D;" d="M38.581,15.702c1.233-0.542,2.096-1.77,2.096-3.202c0-1.933-1.567-3.5-3.5-3.5
+	c-1.433,0-2.661,0.863-3.202,2.096L38.581,15.702z"></path>
+                  <path style="fill:#FBCE9D;" d="M43.581,20.702c1.233-0.542,2.096-1.77,2.096-3.202c0-1.933-1.567-3.5-3.5-3.5
+	c-1.433,0-2.661,0.863-3.202,2.096L43.581,20.702z"></path>
+                  <path style="fill:#FBCE9D;" d="M48.581,25.702c1.233-0.542,2.096-1.77,2.096-3.202c0-1.933-1.567-3.5-3.5-3.5
+	c-1.433,0-2.661,0.863-3.202,2.096L48.581,25.702z"></path>
+                  <path style="fill:#FBCE9D;" d="M28.177,33h-10c-1.925,0-3.5-1.575-3.5-3.5v0c0-1.925,1.575-3.5,3.5-3.5h10
+	c1.925,0,3.5,1.575,3.5,3.5v0C31.677,31.425,30.102,33,28.177,33z"></path>
+                  <g>
+                    <path style="fill:#F7B563;" d="M48.813,31.563l-11.12,11.12c-0.896,0.896-2.349,0.896-3.244,0L24.767,33h-6.589
+		c-0.578,0.283-2.155-0.738-1.55-0.219l10.812,10.77c0.074,0.074,0.16,0.127,0.238,0.194V47h20v-4.51c1.819-1.369,3-3.538,3-5.99
+		C50.677,34.607,49.97,32.883,48.813,31.563z"></path>
+                  </g>
+                  <path style="fill:#424A60;" d="M25.769,2.889L10.212,18.446l7.592,7.592C17.929,26.025,18.05,26,18.177,26h10
+	c1.925,0,3.5,1.575,3.5,3.5s-1.575,3.5-3.5,3.5h-3.411l6.355,6.355l15.556-15.557L25.769,2.889z"></path>
+                  <g>
+                    <path style="fill:#E7ECED;" d="M25.769,2.889l-2.217-2.217c-0.896-0.896-2.349-0.896-3.244,0L7.995,12.984
+		c-0.896,0.896-0.896,2.349,0,3.245l2.217,2.217L25.769,2.889z"></path>
+                    <path style="fill:#E7ECED;" d="M50.005,27.126l-3.328-3.328L31.121,39.355l3.327,3.327c0.896,0.896,2.349,0.896,3.244,0
+		l12.312-12.312C50.901,29.475,50.901,28.022,50.005,27.126z"></path>
+                  </g>
+                  <circle style="fill:#FFFFFF;" cx="41.177" cy="33.5" r="2"></circle>
+                  <path style="fill:#424A60;" d="M15.677,11c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l2-2
+	c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-2,2C16.189,10.902,15.933,11,15.677,11z"></path>
+                </svg></span>
+            </div>
+          </div>
+          <div class="u-container-style u-custom-item u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-3"><span
+                class="u-custom-item u-icon u-icon-circle u-palette-1-base u-spacing-8 u-icon-3"><svg class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice" viewBox="0 0 58.064 58.064" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ae75"></use>
+                </svg><svg class="u-svg-content" viewBox="0 0 58.064 58.064" x="0px" y="0px" id="svg-ae75"
+                  style="enable-background:new 0 0 58.064 58.064;">
+                  <polygon style="fill:#E7ECED;" points="22,30.532 0,23.324 58.064,7.532 36,50.532 "></polygon>
+                  <polygon style="fill:#AFB6BB;" points="22,30.532 20,46.532 28.594,39.952 "></polygon>
+                  <path style="fill:#AFB6BB;"
+                    d="M21.462,29.689c-0.203,0.129-0.329,0.324-0.398,0.536L22,30.532l0.574,0.82L57.189,9.237l0.875-1.705  l-3.345,0.91L21.462,29.689z">
+                  </path>
+                </svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-list u-list-2">
+        <div class="u-repeater u-repeater-2">
+          <div class="u-container-style u-custom-item u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-4">
+              <p class="u-align-left u-custom-item u-text u-text-default u-text-1"> &nbsp; <span
+                  style="font-size: 1rem;"><a href="https://goo.gl/maps/qJ8KEQsCYpmJtBQN6">423458, Республика Татарстан,
+                    г. Альметьевск, ул.
+                    объездной тракт, д. 77,
+                    Помещение 1<br>(Район "Кольцо СУ-5", за хостелом "Нарат")</a>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="u-container-style u-custom-item u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-5">
+              <a href="tel: +78553448787">+7(8553)44-87-87</a>
+            </div>
+          </div>
+          <div class="u-container-style u-custom-item u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-6">
+              <a href="mailto: chnodpo-mpk@mail.ru"> chnodpo-mpk@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b7b2">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-align-left u-text u-text-1">ЧОУ ДПО&nbsp;"МЕНЗЕЛИНСКАЯ ПРОМНЕФТЕСЕРВИСНАЯ КОРПОРАЦИЯ"</p>
+      <p class="u-small-text u-text u-text-variant u-text-2">&nbsp;&nbsp;</p>
+      <p class="u-align-left u-text u-text-3"><span class="u-icon u-icon-1"><svg class="u-svg-content"
+            viewBox="0 0 54.757 54.757" x="0px" y="0px" style="width: 1em; height: 1em;">
+            <path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+	L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7
+	S31.416,26,27.557,26z"></path>
+          </svg><img></span>&nbsp;423458, Республика Татарстан, г. Альметьевск, ул. объездной тракт, д. 77, помещение
+        1&nbsp;<br>(Район "Кольцо СУ-5", за хостелом "Нарат")
+      </p>
+      <a href="tel: +78553448787"
+        class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-btn-1"><span
+          class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px"
+            style="width: 1em; height: 1em;">
+            <path
+              d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z">
+            </path>
+          </svg><img></span>&nbsp;+7 (8553) 44-87-87
+      </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-3"><svg class="u-svg-link"
+          preserveAspectRatio="xMidYMin slice" viewBox="0 0 489.154 489.154" style="">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8d15"></use>
+        </svg><svg class="u-svg-content" viewBox="0 0 489.154 489.154" x="0px" y="0px" id="svg-8d15"
+          style="enable-background:new 0 0 489.154 489.154;">
+          <g>
+            <g>
+              <polygon points="0,386.634 143.542,214.88 0,99.551   "></polygon>
+              <polygon points="489.154,386.634 489.154,99.551 345.611,214.88   "></polygon>
+              <polygon points="487.937,398.675 489.154,398.675 489.154,397.657   "></polygon>
+              <polygon points="0,398.675 1.219,398.675 0,397.657   "></polygon>
+              <polygon
+                points="480.793,398.675 479.939,397.657 334.587,223.736 244.577,296.058 154.567,223.736 9.215,397.657 8.361,398.675       ">
+              </polygon>
+              <polygon
+                points="152.61,204.029 158.121,208.459 163.635,212.888 244.577,277.923 325.52,212.888 331.033,208.459     336.544,204.029 477.866,90.479 11.287,90.479   ">
+              </polygon>
+            </g>
+          </g>
+        </svg></span>
+      <p class="u-align-left u-text u-text-4"> chnodpo-mpk@mail.ru<br>
+      </p>
+      <div class="u-align-right u-expanded-width-sm u-expanded-width-xs u-grey-light-2 u-hidden-xs u-map u-map-1">
+        <div class="embed-responsive">
+          <iframe class="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.451094921431!2d52.32306326741086!3d54.877448950155376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDUyJzM3LjgiTiA1MsKwMTknMzQuMyJF!5e0!3m2!1sru!2sru!4v1632310163347!5m2!1sru!2sru"
+            data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWVtYmVkJTIyJTJDJTIyYWRkcmVzcyUyMiUzQSUyMiVEMCU5MCVEMCVCQiVEMSU4QyVEMCVCQyVEMCVCNSVEMSU4MiVEMSU4QyVEMCVCNSVEMCVCMiVEMSU4MSVEMCVCQSUyQyUyMCVEMCVCRSVEMCVCMSVEMSU4QSVEMCVCNSVEMCVCNyVEMCVCNCVEMCVCRCVEMCVCRSVEMCVCOSUyMCVEMSU4MiVEMSU4MCVEMCVCMCVEMCVCQSVEMSU4MiUyMDc3JTIyJTJDJTIyem9vbSUyMiUzQTEwJTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlMkMlMjJlbWJlZCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGd3d3Lmdvb2dsZS5jb20lMkZtYXBzJTJGZW1iZWQlM0ZwYiUzRCExbTE4ITFtMTIhMW0zITFkMjI5NS40NTEwOTQ5MjE0MzEhMmQ1Mi4zMjMwNjMyNjc0MTA4NiEzZDU0Ljg3NzQ0ODk1MDE1NTM3NiEybTMhMWYwITJmMCEzZjAhM20yITFpMTAyNCEyaTc2OCE0ZjEzLjEhM20zITFtMiExczB4MCUyNTNBMHgwITJ6TlRUQ3NEVXlKek0zTGpnaVRpQTFNc0t3TVRrbk16UXVNeUpGITVlMCEzbTIhMXNydSEyc3J1ITR2MTYzMjMxMDE2MzM0NyE1bTIhMXNydSEyc3J1JTIyJTdE"></iframe>
+        </div>
+      </div>
+      <p class="u-align-left u-text u-text-5">Режим работы:&nbsp;<br>Пн-Пт: 08:00-17:00<br>Сб-Вс: Выходной
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

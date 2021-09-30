@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="ЧАСТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ&nbsp;ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ&nbsp;&quot;ПРОМНЕФТЕСЕРВИСНАЯ КОРПОРАЦИЯ&quot;">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Курсы</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen">
+  <link rel="stylesheet" href="{% static 'css/courses.css' %}" media="screen">
+  <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{% static 'js/style.js' %}" defer=""></script>
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i">
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="courses">
+  <meta property="og:type" content="website">
+</head>
+
+
+<body class="u-body">
+  <header class="u-clearfix u-header" id="sec-37b8">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a href="{% url 'main' %}" class="u-image u-logo u-image-1" data-image-width="418" data-image-height="172">
+        <img src="{% static 'images/0001.jpg' %}" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-active-color u-custom-border-radius u-custom-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </symbol>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'main' %}" style="padding: 10px 42px;">Главная</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'courses' %}" style="padding: 10px 42px;">Курсы</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'education' %}" style="padding: 10px 42px;">Обучение</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'sees' %}" target="_blank" style="padding: 10px 42px;">Версия для слабовидящих</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-7 u-border-active-palette-1-base u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="{% url 'contact' %}" style="padding: 10px 42px;">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main' %}"
+                    style="padding: 10px 42px;">Главная</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'courses' %}"
+                    style="padding: 10px 42px;">Курсы</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'education' %}"
+                    style="padding: 10px 42px;">Обучение</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'sees' %}" target="_blank"
+                    style="padding: 10px 42px;">Версия для слабовидящих</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}"
+                    style="padding: 10px 42px;">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="skrollable u-align-center u-clearfix u-hidden-sm u-hidden-xs u-white u-section-1" id="sec-5280">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-custom-font u-font-georgia u-text u-text-1">ЧАСТНОЕ ОБРАЗОВАТЕЛЬНОЕ
+        УЧРЕЖДЕНИЕ&nbsp;<br>ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ&nbsp;<br>"МЕНЗЕЛИНСКАЯ ПРОМНЕФТЕСЕРВИСНАЯ
+        КОРПОРАЦИЯ"
+      </h1>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-xl u-section-2" id="carousel_cf92">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <h1 class="u-custom-font u-font-georgia u-text u-text-1">ЧАСТНОЕ ОБРАЗОВАТЕЛЬНОЕ
+        УЧРЕЖДЕНИЕ&nbsp;<br>ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ&nbsp;<br>"ПРОМНЕФТЕСЕРВИСНАЯ КОРПОРАЦИЯ"
+      </h1>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-3" id="sec-a5a0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-1">Широкий выбор выбора профессий</h3>
+      <div
+        class="u-carousel u-carousel-duration-2250 u-gallery u-gallery-slider u-layout-carousel u-lightbox u-no-transition u-show-text-always u-gallery-1"
+        id="carousel-d2d5" data-interval="2250" data-u-ride="carousel" data-pause="false">
+        <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+          <li data-u-target="#carousel-d2d5" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle"
+            style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-d2d5" data-u-slide-to="1" class="u-grey-70 u-shape-circle"
+            style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-d2d5" data-u-slide-to="2" class="u-grey-70 u-shape-circle"
+            style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-d2d5" data-u-slide-to="3" class="u-grey-70 u-shape-circle"
+            style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-d2d5" data-u-slide-to="4" class="u-grey-70 u-shape-circle"
+            style="width: 10px; height: 10px;"></li>
+        </ol>
+        <div class="u-carousel-inner u-gallery-inner" role="listbox">
+          <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+            <div class="u-back-slide u-back-slide-1" data-image-width="640" data-image-height="425">
+              <img class="u-back-image u-expanded" src="{% static 'images/burilshchik_eirbs.jpg' %}">
+            </div>
+            <div class="u-align-left u-over-slide u-shading u-valign-bottom u-over-slide-1">
+              <h1 class="u-custom-font u-font-playfair-display u-gallery-heading"
+                style="margin-left: 0px; margin-right: auto; font-size: 3rem; font-style: italic;">Бурильщик ЭиРБС</h1>
+              <p class="u-gallery-text" style="margin-left: 0px; margin-right: auto; margin-top: 0px;"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-gallery-item u-carousel-item-2">
+            <div class="u-back-slide u-back-slide-2" data-image-width="773" data-image-height="435">
+              <img class="u-back-image u-expanded u-back-image-2"
+                src="{% static 'images/vse-o-professii-pomoshchnik-burilshchika-10.jpg' %}">
+            </div>
+            <div class="u-align-left u-over-slide u-shading u-valign-bottom u-over-slide-2">
+              <h1 class="u-custom-font u-font-playfair-display u-gallery-heading"
+                style="margin-left: 0px; margin-right: auto; font-size: 3rem; font-style: italic;">Помощник бурильщика
+                ЭиРБС</h1>
+              <p class="u-gallery-text" style="margin-left: 0px; margin-right: auto; margin-top: 0px;"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-gallery-item u-carousel-item-3" data-image-width="974" data-image-height="700">
+            <div class="u-back-slide u-back-slide-3">
+              <img class="u-back-image u-expanded u-back-image-3"
+                src="{% static 'images/otlichiya-elektrika-ot-elektromontera-1782666.jpg' %}" alt="Электромонтер">
+            </div>
+            <div class="u-align-left u-over-slide u-shading u-valign-bottom u-over-slide-3">
+              <h1 class="u-custom-font u-font-playfair-display u-gallery-heading"
+                style="margin-left: 0px; margin-right: auto; font-size: 3rem; font-style: italic;">Электромонтер</h1>
+              <p class="u-gallery-text" style="margin-left: 0px; margin-right: auto; margin-top: 0px;"></p>
+            </div>
+            <style data-mode="XL"></style>
+            <style data-mode="LG"></style>
+            <style data-mode="MD"></style>
+            <style data-mode="SM"></style>
+            <style data-mode="XS"></style>
+          </div>
+          <div class="u-carousel-item u-gallery-item u-carousel-item-4" data-image-width="800" data-image-height="532">
+            <div class="u-back-slide u-back-slide-4">
+              <img class="u-back-image u-expanded u-back-image-4" src="{% static 'images/tokar.jpg' %}" alt="Токарь">
+            </div>
+            <div class="u-align-left u-over-slide u-shading u-valign-bottom u-over-slide-4">
+              <h1 class="u-custom-font u-font-playfair-display u-gallery-heading"
+                style="margin-left: 0px; margin-right: auto; font-size: 3rem; font-style: italic;">Токарь</h1>
+              <p class="u-gallery-text" style="margin-left: 0px; margin-right: auto; margin-top: 0px;"></p>
+            </div>
+            <style data-mode="XL"></style>
+            <style data-mode="LG"></style>
+            <style data-mode="MD"></style>
+            <style data-mode="SM"></style>
+            <style data-mode="XS"></style>
+          </div>
+          <div class="u-carousel-item u-gallery-item u-carousel-item-5" data-image-width="1280" data-image-height="720">
+            <div class="u-back-slide u-back-slide-5" data-image-width="1000" data-image-height="400">
+              <img class="u-back-image u-expanded u-back-image-5" src="{% static 'images/217.jpg' %}" alt="Слесарь">
+            </div>
+            <div class="u-align-left u-over-slide u-shading u-valign-bottom u-over-slide-5">
+              <h1 class="u-custom-font u-font-playfair-display u-gallery-heading"
+                style="margin-left: 0px; margin-right: auto; font-size: 3rem; font-style: italic;">Слесарь</h1>
+              <p class="u-gallery-text" style="margin-left: 0px; margin-right: auto; margin-top: 0px;"></p>
+            </div>
+            <style data-mode="XL"></style>
+            <style data-mode="LG"></style>
+            <style data-mode="MD"></style>
+            <style data-mode="SM"></style>
+            <style data-mode="XS"></style>
+          </div>
+        </div>
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1"
+          href="#carousel-d2d5" role="button" data-u-slide="prev">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 451.847 451.847">
+              <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+            </svg>
+          </span>
+          <span class="sr-only">
+            <svg viewBox="0 0 451.847 451.847">
+              <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+            </svg>
+          </span>
+        </a>
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2"
+          href="#carousel-d2d5" role="button" data-u-slide="next">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 451.846 451.847">
+              <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+            </svg>
+          </span>
+          <span class="sr-only">
+            <svg viewBox="0 0 451.846 451.847">
+              <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-palette-1-base u-section-4" id="sec-0448">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-1">ЗАПИШИСЬ НА ОБУЧЕНИЕ</h2>
+      <p class="u-text u-text-2">Выберите из выпадающего списка необходимую профессию</p>
+      <div class="u-accordion u-expanded-width u-faq u-spacing-20 u-accordion-1">
+        <div class="u-accordion-item">
+          <a class="u-accordion-link u-border-1 u-border-active-grey-75 u-border-grey-15 u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-font u-font-merriweather u-text-black u-accordion-link-1"
+            id="link-accordion-6327" aria-controls="accordion-6327" aria-selected="false">
+            <span class="u-accordion-link-text">Программы профессионального обучения&nbsp;</span><span
+              class="u-accordion-link-icon u-icon u-icon-circle u-palette-1-base u-spacing-0 u-text-black u-icon-1"><svg
+                class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style="">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8021"></use>
+              </svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-8021" style="">
+                <path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path>
+              </svg></span>
+          </a>
+          <div class="u-accordion-pane u-accordion-pane u-container-style u-accordion-pane-1" id="accordion-6327"
+            aria-labelledby="link-accordion-6327">
+            <div class="u-container-layout u-container-layout-1">
+              <div class="fr-view u-clearfix u-rich-text u-text">
+                <p>
+                  {% for product in products %}
+                    {% if product.category_id == 1 %}
+                      <div class="block">
+                          <div class="text">
+                            <h5>{{ product.name }}</h5>
+                            <p style="font-style: italic;">{{ product.description }}</p>
+                            <p>{{ product.price }} руб.</p>
+                          </div>
+                        </a>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-accordion-item">
+          <a class="u-accordion-link u-border-1 u-border-active-grey-75 u-border-grey-15 u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-font u-font-merriweather u-text-black u-accordion-link-2"
+            id="link-accordion-4aab" aria-controls="accordion-4aab" aria-selected="false">
+            <span class="u-accordion-link-text">Программы повышения квалификации</span><span
+              class="u-accordion-link-icon u-icon u-icon-circle u-palette-1-base u-spacing-0 u-text-black u-icon-2"><svg
+                class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style="">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3470"></use>
+              </svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-3470" style="">
+                <path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path>
+              </svg></span>
+          </a>
+          <div class="u-accordion-pane u-container-style u-accordion-pane-2" id="accordion-4aab"
+            aria-labelledby="link-accordion-4aab">
+            <div class="u-container-layout u-container-layout-2">
+              <div class="fr-view u-clearfix u-rich-text u-text">
+                <p>
+                  {% for product in products %}
+                    {% if product.category_id == 2 %}
+                      <div class="block">
+                          <div class="text">
+                            <h5>{{ product.name }}</h5>
+                            <p style="font-style: italic;">{{ product.description }}</p>
+                            <p>{{ product.price }} руб.</p>
+                          </div>
+                        </a>
+                      </div>
+                    {% endif %}
+                  {% endfor %}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-palette-1-base u-section-5" id="sec-57b3">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <a href="{% url 'education' %}"
+        class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-2-base u-radius-50 u-btn-1">записаться
+        на обучение</a>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-palette-1-base u-section-6" id="sec-1cb8">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <h2 class="u-text u-text-default u-text-1">Наши преподователи</h2>
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+              <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="598"
+                data-image-height="598"></div>
+              <h5 class="u-text u-text-2">Малоштанов&nbsp;<br>Олег<br>ИВаниович
+              </h5>
+              <p class="u-text u-text-3">Директор</p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+              <div alt="" class="u-image u-image-circle u-image-2" src="" data-image-width="598"
+                data-image-height="598"></div>
+              <h5 class="u-text u-text-4"> Зигангирова&nbsp;<br>Регина&nbsp;<br>Фархатовна
+              </h5>
+              <p class="u-text u-text-5">Мастер&nbsp;<br>производственного обучения
+              </p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+              <div alt="" class="u-image u-image-circle u-image-3" src="" data-image-width="598"
+                data-image-height="598"></div>
+              <h5 class="u-text u-text-6"> Суворов&nbsp;<br>Александр Николаевич
+              </h5>
+              <p class="u-text u-text-7"> Мастер&nbsp;<br>производственного обучения
+              </p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+              <div alt="" class="u-image u-image-circle u-image-4" src="" data-image-width="598"
+                data-image-height="598"></div>
+              <h5 class="u-text u-text-8">Якупов&nbsp;<br>Ильдар&nbsp;<br>Ленарович
+              </h5>
+              <p class="u-text u-text-9"> Мастер&nbsp;<br>производственного обучения
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b7b2">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-align-left u-text u-text-1">ЧОУ ДПО&nbsp;"МЕНЗЕЛИНСКАЯ ПРОМНЕФТЕСЕРВИСНАЯ КОРПОРАЦИЯ"</p>
+      <p class="u-small-text u-text u-text-variant u-text-2">&nbsp;&nbsp;</p>
+      <p class="u-align-left u-text u-text-3"><span class="u-icon u-icon-1"><svg class="u-svg-content"
+            viewBox="0 0 54.757 54.757" x="0px" y="0px" style="width: 1em; height: 1em;">
+            <path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+    L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7
+    S31.416,26,27.557,26z"></path>
+          </svg><img></span>&nbsp;423458, Республика Татарстан, г. Альметьевск, ул. объездной тракт, д. 77, помещение
+        1&nbsp;<br>(Район "Кольцо СУ-5", за хостелом "Нарат")
+      </p>
+      <a href="tel: +78553448787"
+        class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-btn-1"><span
+          class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px"
+            style="width: 1em; height: 1em;">
+            <path
+              d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z">
+            </path>
+          </svg><img></span>&nbsp;+7 (8553) 44-87-87
+      </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-3"><svg class="u-svg-link"
+          preserveAspectRatio="xMidYMin slice" viewBox="0 0 489.154 489.154" style="">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8d15"></use>
+        </svg><svg class="u-svg-content" viewBox="0 0 489.154 489.154" x="0px" y="0px" id="svg-8d15"
+          style="enable-background:new 0 0 489.154 489.154;">
+          <g>
+            <g>
+              <polygon points="0,386.634 143.542,214.88 0,99.551   "></polygon>
+              <polygon points="489.154,386.634 489.154,99.551 345.611,214.88   "></polygon>
+              <polygon points="487.937,398.675 489.154,398.675 489.154,397.657   "></polygon>
+              <polygon points="0,398.675 1.219,398.675 0,397.657   "></polygon>
+              <polygon
+                points="480.793,398.675 479.939,397.657 334.587,223.736 244.577,296.058 154.567,223.736 9.215,397.657 8.361,398.675       ">
+              </polygon>
+              <polygon
+                points="152.61,204.029 158.121,208.459 163.635,212.888 244.577,277.923 325.52,212.888 331.033,208.459     336.544,204.029 477.866,90.479 11.287,90.479   ">
+              </polygon>
+            </g>
+          </g>
+        </svg></span>
+      <p class="u-align-left u-text u-text-4"> chnodpo-mpk@mail.ru<br>
+      </p>
+      <div class="u-align-right u-expanded-width-sm u-expanded-width-xs u-grey-light-2 u-hidden-xs u-map u-map-1">
+        <div class="embed-responsive">
+          <iframe class="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.451094921431!2d52.32306326741086!3d54.877448950155376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDUyJzM3LjgiTiA1MsKwMTknMzQuMyJF!5e0!3m2!1sru!2sru!4v1632310163347!5m2!1sru!2sru"
+            data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWVtYmVkJTIyJTJDJTIyYWRkcmVzcyUyMiUzQSUyMiVEMCU5MCVEMCVCQiVEMSU4QyVEMCVCQyVEMCVCNSVEMSU4MiVEMSU4QyVEMCVCNSVEMCVCMiVEMSU4MSVEMCVCQSUyQyUyMCVEMCVCRSVEMCVCMSVEMSU4QSVEMCVCNSVEMCVCNyVEMCVCNCVEMCVCRCVEMCVCRSVEMCVCOSUyMCVEMSU4MiVEMSU4MCVEMCVCMCVEMCVCQSVEMSU4MiUyMDc3JTIyJTJDJTIyem9vbSUyMiUzQTEwJTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlMkMlMjJlbWJlZCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGd3d3Lmdvb2dsZS5jb20lMkZtYXBzJTJGZW1iZWQlM0ZwYiUzRCExbTE4ITFtMTIhMW0zITFkMjI5NS40NTEwOTQ5MjE0MzEhMmQ1Mi4zMjMwNjMyNjc0MTA4NiEzZDU0Ljg3NzQ0ODk1MDE1NTM3NiEybTMhMWYwITJmMCEzZjAhM20yITFpMTAyNCEyaTc2OCE0ZjEzLjEhM20zITFtMiExczB4MCUyNTNBMHgwITJ6TlRUQ3NEVXlKek0zTGpnaVRpQTFNc0t3TVRrbk16UXVNeUpGITVlMCEzbTIhMXNydSEyc3J1ITR2MTYzMjMxMDE2MzM0NyE1bTIhMXNydSEyc3J1JTIyJTdE"></iframe>
+        </div>
+      </div>
+      <p class="u-align-left u-text u-text-5">Режим работы:&nbsp;<br>Пн-Пт: 08:00-17:00<br>Сб-Вс: Выходной
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
