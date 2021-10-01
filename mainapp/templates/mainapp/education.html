@@ -176,6 +176,39 @@
     </div>
   </section>
 
+  <h1>Обратная связь</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+	<div>
+	  <label for="id_subject">Тема:</label>
+	  {{ form.subject.errors }}
+{#	  {{ form.subject }}#}
+      <input class="form-control" id="id_subject" name="subject" placeholder="Тема">
+	</div>
+    &nbsp;
+	<div>
+	  <label for="id_sender">E-mail:</label>
+	  {{ form.sender.errors }}
+{#	  {{ form.sender }}#}
+      <input class="form-control" id="id_sender" name="sender" placeholder="Ваш e-mail">
+	</div>
+    &nbsp;
+	<div>
+	  <label for="id_message">Сообщение:</label>
+	  {{ form.message.errors }}
+{#	  {{ form.message }}#}
+      <textarea class="form-control" id="id_message" name="message" placeholder="Введите ваше сообщение"></textarea>
+	</div>
+    &nbsp;
+	<div>
+	  {{ form.copy.errors }}
+	  <label for="id_copy">{{ form.copy }} Отправить копию себе </label>
+	</div>
+    <br>
+	<input type="submit" class="btn btn-success" value="Отправить сообщение"/>
+</form>
+
 
   <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b7b2">
     <div class="u-clearfix u-sheet u-sheet-1">

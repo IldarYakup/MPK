@@ -128,6 +128,9 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = '465'
+EMAIL_HOST_USER = 'DonicFur@yandex.ru'
+EMAIL_HOST_PASSWORD = '53ebuMoG'
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = 'DonicFur@yandex.ru'
