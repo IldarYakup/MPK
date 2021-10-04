@@ -17,8 +17,6 @@ from django.contrib import admin
 from django.urls import path
 import mainapp.views as mainapp
 
-
-
 urlpatterns = [
     path('', mainapp.main, name='main'),
     path('courses/', mainapp.courses, name='courses'),
@@ -26,4 +24,5 @@ urlpatterns = [
     path('sees/', mainapp.sees, name='sees'),
     path('education/', mainapp.education, name='education'),
     path('admin/', admin.site.urls, name='main'),
+    path('feedback/', mainapp.feedback, name='feedback'),
 ]
