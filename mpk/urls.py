@@ -24,5 +24,4 @@ urlpatterns = [
     path('sees/', mainapp.sees, name='sees'),
     path('education/', mainapp.education, name='education'),
     path('admin/', admin.site.urls, name='main'),
-    path('feedback/', mainapp.feedback, name='feedback'),
 ]

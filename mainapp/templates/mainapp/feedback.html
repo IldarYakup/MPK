@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Отправить заявку</button>
 
-</form>
-</body>
-</html>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+
+            <p><label for="name-f2a8" class="u-custom-font u-font-merriweather u-label u-label-1">{{form.name.label}}: </label>{{ form.name }}</p>
+            <div class="form-error">{{ form.name.errors }}</div>
+            <p><label for="email" class="u-custom-font u-font-merriweather u-label u-label-2">{{form.email.label}}: </label>{{ form.email }}</p>
+            <div class="form-error">{{ form.email.errors }}</div>
+            <p>{{ form.prof }}</p>
+            <div class="form-error">{{ form.prof.errors }}</div>
+            <p><label for="{{form.birth.id_for_label}}" class="u-custom-font u-font-merriweather u-label u-label-5">{{form.birth.label}}: </label>{{ form.birth }}</p>
+            <div class="form-error">{{ form.birth.errors }}</div>
+            <p><label for="{{form.phone.id_for_label}}" class="u-custom-font u-font-merriweather u-label u-label-6">{{form.phone.label}}: </label>{{ form.phone }}</p>
+            <div class="form-error">{{ form.phone.errors }}</div>
+            <button type="submit" class="u-btn u-btn-round u-btn-submit u-button-style u-palette-2-base u-radius-50 u-btn-1">Отправить заявку</button>
+        </form>
+    </div>
