@@ -24,4 +24,9 @@ urlpatterns = [
     path('sees/', mainapp.sees, name='sees'),
     path('education/', mainapp.education, name='education'),
     path('admin/', admin.site.urls, name='main'),
+    path('success/', mainapp.success, name='success'),
+    path('fail', mainapp.fail, name='fail'),
 ]
+
+
+handler404 = "mainapp.views.page_not_found_view"
